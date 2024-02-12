@@ -6,7 +6,7 @@ jobs:
   steps:
    - run: echo "job.triggered.event is ${{ github.event_name }}"
    - run: echo "job.running.os is ${{ runner.os }}"
-   - run: echo "job.branch is ${{ }}"
+   - run: echo "job.branch is ${{ github.ref }}"
    - run: echo "job.repository is ${{ github.repository }}"
    - run: echo "job.status is ${{ job.status }}."
    - run: ehco "The workflow is code test on the runner."
