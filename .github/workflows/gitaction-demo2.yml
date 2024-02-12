@@ -11,7 +11,7 @@ jobs:
    - run: echo "job.status is ${{ job.status }}."
    - run: ehco "The workflow is code test on the runner."
    - name: Check out repository code
-    uses: actions/checkout@v2
+     uses: actions/checkout@v2
    - name: List files on repository
-    run: |
-     ls ${{ github.workspace }}|
+     run: |
+      ls ${{ github.workspace }}
